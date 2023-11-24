@@ -1,11 +1,22 @@
-var firstButton = document.getElementById('firstButton')
+var mainText = document.getElementById('mainText')
+var rockButton = document.getElementById('rockButton')
+var scissorsButton = document.getElementById('scissorsButton')
+var paperButton = document.getElementById('paperButton')
 var userResult = document.getElementById('userResult')
 var compResult = document.getElementById('compResult')
-var finalResult = document.getElementById('finalResult')
+var winResult = document.getElementById('winResult')
+var restartButton = document.getElementById('restartButton')
+var startButton = document.getElementById('startButton')
+var mainScreen = document.getElementById('mainScreen')
 
 var choice = ['rock', 'scissors', 'paper']
 
+
 var randomChoice;
+var userValue;
+var compValue;
+var finalResult;
+
 
 function setRandom() {
     randomChoice = Math.floor(Math.random() * choice.length)
@@ -22,34 +33,64 @@ function setRandom() {
     }
 }
 
-    
-function userValue() {
-    let user = choice
-    let userRock = choice[0]
-    let userScissors = choice[1]
-    let userPaper = choice[2]
-}
-
+   
 
 function winner() {
     switch(finalResult){
-        case user == compValue:
-            return 'Ничья!'
-        case user = 'rock':
-            comp = 'scissors'
-            return 'Вы выиграли!'
-        case userScissors = 'scissors':
-            comp = 'paper'
-            return 'Вы выиграли!'
-        case userPaper = 'paper':
-            comp = 'rock'
-            return 'Вы выиграли!'
+        case userValue == compValue:
+            return finalResult = 'Ничья!' 
+        case userValue == 'rock':
+            compValue == 'scissors'
+            return finalResult = 'Вы выиграли!'
+        case userValue == 'scissors':
+            compValue == 'paper'
+            return finalResult = 'Вы выиграли!'
+        case userValue == 'paper':
+            compValue == 'rock'
+            return finalResult = 'Вы выиграли!'
         default:
-            return 'Вы проиграли :('
+            return finalResult = 'Вы проиграли :('
     }
 }
 
 
-firstButton.addEventListener('click', function(){ 
-    userResult.innerHTML = userValue()
+rockButton.addEventListener('click', function(){ 
+    winner()
+    setRandom()
+    userValue = choice[0]
+    userResult.innerHTML = `Ваш ход: ${userValue}`
+    compResult.innerHTML = `Ход противника ${compValue}`
+    winResult.innerHTML = `${finalResult}`
 })
+
+
+scissorsButton.addEventListener('click', function(){
+    winner()
+    setRandom()
+    userValue = choice[1]
+    userResult.innerHTML += `Ваш ход: ${userValue}`
+    compResult.innerHTML = `Ход противника ${compValue}`
+    winResult.innerHTML = `${finalResult}`
+})
+
+
+paperButton.addEventListener('click', function(){
+    winner()
+    setRandom()
+    userValue = choice[2]
+    userResult.innerHTML += `Ваш ход: ${userValue}`
+    compResult.innerHTML = `Ход противника ${compValue}`
+    winResult.innerHTML = `${finalResult}`
+})
+
+restartButton.addEventListener('click', function() {
+   if (mainScreen.style.display = 'none'){
+    startButton.style.display = 'none'
+    startButton.style.display = 'block'
+   } else {
+    mainScreen.style.display = 'none'
+    startButton.style.display = 'block'
+   }
+})
+
+
