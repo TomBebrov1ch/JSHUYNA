@@ -1,12 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100dvh;
+    background-color: #75A59F;
+}
+
+
+#mainScreen{
+    display: none;
+}
+
+#startButton{
+    display: flex;
+} 
+
+.startButton{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.start{
+    border: 1xp solid #465088;
+    padding: 20px 40px;
+    background-color: #465088;
+    border-radius: 3px;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-family: 'Barlow Condensed', sans-serif;
 }
 
 .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
+    background-color: #5E5669;
+    padding: 250px 200px;
+    border-radius: 5px;
 }
 
-.startButton{
-    display: none;
+.rockButton{
+    border: 1xp solid #323548;
+    padding: 20px 40px;
+    background-color: #323548;
+    border-radius: 3px;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-family: 'Barlow Condensed', sans-serif;
 }
+
+.scissorsButton{
+    border: 1xp solid #323548;
+    padding: 20px 40px;
+    background-color: #323548;
+    border-radius: 3px;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.paperButton{
+    border: 1xp solid #323548;
+    padding: 20px 40px;
+    background-color: #323548;
+    border-radius: 3px;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.restart{
+    border: 1xp solid #465088;
+    padding: 20px 40px;
+    background-color: #465088;
+    border-radius: 3px;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.win{
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 30px;
+}
+

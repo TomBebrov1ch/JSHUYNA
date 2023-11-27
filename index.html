@@ -9,11 +9,11 @@
 <body> 
     <div id="mainScreen">
         <div class="container">
-            <h1 id="mainText">Камень Ножницы Бумага</h1>
+            <h1 id="mainText"></h1>
             <div class="buttons">
-                <button id="rockButton">Камень</button>
-                <button id="scissorsButton">Ножницы</button>
-                <button id="paperButton">Бумага</button>
+                <button class="rockButton" id="rockButton"><img src="./rock.png" alt="" ></button>
+                <button class="scissorsButton" id="scissorsButton"><img src="./scissors.png" alt="" height="45px" width="43px"></button>
+                <button class="paperButton" id="paperButton"><img src="./paper.png" alt="" height="45px" width="43px"></button>
             </div>
             <div class="win">
                 <p id="userResult"></p>
@@ -21,12 +21,12 @@
                 <p id="winResult"></p>
             </div>
             <div class="restartButton">
-                <button id="restartButton">Сыграть снова</button>
-            </div>
-            <div class="startButton">
-                <button id="startButton">Начать</button>
+                <button class="restart" id="restartButton">Сыграть снова</button>
             </div>
         </div>
+    </div>
+    <div class="startButton">
+        <button class="start" id="startButton">НАЧАТЬ</button>
     </div>
 </body>
 <script src="./script.js"></script>
