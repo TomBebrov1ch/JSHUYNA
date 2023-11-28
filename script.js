@@ -9,6 +9,7 @@ var restartButton = document.getElementById('restartButton')
 var startButton = document.getElementById('startButton')
 var mainScreen = document.getElementById('mainScreen')
 var container = document.getElementsByClassName('container')
+var reset = document.getElementById('reset')
 
 var choice = ['Камень', 'Ножницы', 'Бумага']
 
@@ -17,7 +18,6 @@ var randomChoice;
 var userValue;
 var compValue;
 var finalResult;
-
 
 
 function setRandom() {
@@ -54,24 +54,19 @@ function winner() {
 }
 
 
-// function reset() {
-//     let resetButton = restartButton
-//     if (resetButton == true){
-//     userResult.value = null
-//     compResult.value = null 
-//     winResult.value = null
-//     }
-// }
+
 
 
 rockButton.addEventListener('click', function(){ 
+    // if (rockButton) {
+
+    // }
     setRandom()
     userValue = choice[0]
     userResult.innerHTML = `Ваш ход: ${userValue}`
     compResult.innerHTML = `Ход противника: ${compValue}`
     winner()
     winResult.innerHTML = `${finalResult}`
-    
 })
 
 
@@ -96,8 +91,6 @@ paperButton.addEventListener('click', function(){
 
 
 
-
-
 startButton.addEventListener('click', function() {
     if (mainScreen.style.display = 'none') {
     mainScreen.style.display = 'flex'
@@ -112,3 +105,5 @@ restartButton.addEventListener('click', function() {
     startButton.style.display = 'flex'
 } 
 })
+
+

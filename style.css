@@ -1,5 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
 
+@media (max-width: 1580px) {
+    #rockButton{
+        padding: 10px 25px;
+    }
+    #scissorsButton{
+        padding: 10px 25px;
+    }
+    #paperButton{
+        padding: 10px 25px;
+    }
+    #restartButton{
+        padding: 15px 25px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1400px) {
+    #rockButton{
+        padding: 5px 18px;
+    }
+    #scissorsButton{
+        padding: 5px 18px;
+    }
+    #paperButton{
+        padding: 5px 18px;
+    }
+    #restartButton{
+        padding: 15px 22px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1315px) {
+    #rockButton{
+        padding: 3px 10px;
+    }
+    #scissorsButton{
+        padding: 3px 10px;
+    }
+    #paperButton{
+        padding: 3px 10px;
+    }
+    #restartButton{
+        padding: 12px 22px;
+        font-size: 15px;
+    }
+    #score{
+        font-size: 20px;
+    }   
+}
+
+@media (max-width: 1218px) {
+        #rockButton{
+            padding: 3px 8px;
+        }
+        #scissorsButton{
+            padding: 3px 8px;
+        }
+        #paperButton{
+            padding: 3px 8px;
+        }
+        #restartButton{
+            padding: 12px 20px;
+            font-size: 15px;
+        }
+    }
+    
 *{
     margin: 0;
     padding: 0;
@@ -99,4 +166,3 @@ body{
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 30px;
 }
-
