@@ -1,71 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
-
-@media (max-width: 1580px) {
+    
+@media (max-width: 768px) {
     #rockButton{
-        padding: 10px 25px;
+        padding: 2px 5px;
     }
     #scissorsButton{
-        padding: 10px 25px;
+        padding: 2px 5px;
     }
     #paperButton{
-        padding: 10px 25px;
+        padding: 2px 5px;
     }
     #restartButton{
-        padding: 15px 25px;
+        padding: 9px 25px;
+        font-size: 15px;
+    }
+    #container{
+        padding: 150px 100px;
+    }
+    #userResult{
+        font-size: 20px;
+    }
+    #compResult{
+        font-size: 20px;
+    }
+    #winResult{
         font-size: 20px;
     }
 }
 
-@media (max-width: 1400px) {
-    #rockButton{
-        padding: 5px 18px;
+@media (max-width: 320px){
+    .rockButton{
+        padding: 1px 1px;
+        display: none;
+        border: 10px solid red;
     }
     #scissorsButton{
-        padding: 5px 18px;
+        padding: 1px 1px;
+        display: none;
     }
     #paperButton{
-        padding: 5px 18px;
+        padding: 1px 1px;
+        display: none;
+    }
+    #rockButtonText{
+        display: flex;
+        padding: 4px 1px;
+        font-size: 4px;
+    }
+    #scissorsButtonText{
+        display: flex;
+        padding: 4px 1px;
+        font-size: 4px;
+    }
+    #paperButtonText{
+        display: flex;
+        padding: 4px 1px;
+        font-size: 4px;
     }
     #restartButton{
-        padding: 15px 22px;
-        font-size: 15px;
+        padding: 2px 10px;
+        font-size: 7px;
+    }
+    #container{
+        padding: 100px 50px;
+    }
+    #userResult{
+        font-size: 10px;
+    }
+    #compResult{
+        font-size: 10px;
+    }
+    #winResult{
+        font-size: 10px;
     }
 }
-
-@media (max-width: 1315px) {
-    #rockButton{
-        padding: 3px 10px;
-    }
-    #scissorsButton{
-        padding: 3px 10px;
-    }
-    #paperButton{
-        padding: 3px 10px;
-    }
-    #restartButton{
-        padding: 12px 22px;
-        font-size: 15px;
-    }
-    #score{
-        font-size: 20px;
-    }   
-}
-
-@media (max-width: 1218px) {
-        #rockButton{
-            padding: 3px 8px;
-        }
-        #scissorsButton{
-            padding: 3px 8px;
-        }
-        #paperButton{
-            padding: 3px 8px;
-        }
-        #restartButton{
-            padding: 12px 20px;
-            font-size: 15px;
-        }
-    }
     
 *{
     margin: 0;
@@ -148,6 +156,42 @@ body{
     color: white;
     font-size: 24px;
     font-family: 'Barlow Condensed', sans-serif;
+}
+
+.rockButtonText{
+    border: 1xp solid #323548;
+    padding: 20px 40px;
+    background-color: #323548;
+    border-radius: 3px;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-family: 'Barlow Condensed', sans-serif;
+    display: none;
+}
+
+.scissorsButtonText{
+    border: 1xp solid #323548;
+    padding: 20px 40px;
+    background-color: #323548;
+    border-radius: 3px;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-family: 'Barlow Condensed', sans-serif;
+    display: none;
+}
+
+.paperButtonText{
+    border: 1xp solid #323548;
+    padding: 20px 40px;
+    background-color: #323548;
+    border-radius: 3px;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-family: 'Barlow Condensed', sans-serif;
+    display: none;
 }
 
 .restart{
