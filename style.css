@@ -29,37 +29,33 @@
 }
 
 @media (max-width: 320px){
-    .rockButton{
-        padding: 1px 1px;
-        display: none;
-        border: 10px solid red;
+    #rockButton{
+        padding-top: clamp(0.5px,0.23364vw,2px);
+        padding-left: clamp(0.5px,0.23364vw,2px);
     }
     #scissorsButton{
-        padding: 1px 1px;
-        display: none;
+        padding-top: clamp(0.5px,0.23364vw,2px);
+        padding-left: clamp(0.5px,0.23364vw,2px);
     }
     #paperButton{
-        padding: 1px 1px;
-        display: none;
-    }
-    #rockButtonText{
-        display: flex;
-        padding: 4px 1px;
-        font-size: 4px;
-    }
-    #scissorsButtonText{
-        display: flex;
-        padding: 4px 1px;
-        font-size: 4px;
-    }
-    #paperButtonText{
-        display: flex;
-        padding: 4px 1px;
-        font-size: 4px;
+        padding-top: clamp(0.5px,0.23364vw,2px);
+        padding-left: clamp(0.5px,0.23364vw,2px);
     }
     #restartButton{
         padding: 2px 10px;
         font-size: 7px;
+    }
+    #rockImg{
+        height: 10px ;
+        width: 8px;
+    }
+    #scissorsImg{
+        height: 10px ;
+        width: 8px;
+    }
+    #paperImg{
+        height: 10px ;
+        width: 8px;
     }
     #container{
         padding: 100px 50px;
@@ -85,6 +81,9 @@ body{
     width: 100%;
     height: 100dvh;
     background-color: #75A59F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -97,15 +96,13 @@ body{
 } 
 
 .startButton{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .start{
     border: 1xp solid #465088;
-    padding: 20px 40px;
+    padding-top: clamp(20px,2.0832vw,80px);
+    padding-left: clamp(40px,4.1664vw,160px);
     background-color: #465088;
     border-radius: 3px;
     text-decoration: none;
@@ -115,19 +112,23 @@ body{
 }
 
 .container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
     background-color: #5E5669;
-    padding: 250px 200px;
+    padding-top: clamp(250px,26.04vw,1000px);
+    padding-left: clamp(200px,20.832vw,800px);
     border-radius: 5px;
 }
 
 .rockButton{
     border: 1xp solid #323548;
-    padding: 20px 40px;
+    padding-top: clamp(12.5px,1.302vw,50px);
+    padding-left: clamp(25px,2.604vw,100px);
     background-color: #323548;
     border-radius: 3px;
     text-decoration: none;
@@ -138,7 +139,8 @@ body{
 
 .scissorsButton{
     border: 1xp solid #323548;
-    padding: 20px 40px;
+    padding-top: clamp(12.5px,1.302vw,50px);
+    padding-left: clamp(25px,2.604vw,100px);
     background-color: #323548;
     border-radius: 3px;
     text-decoration: none;
@@ -149,7 +151,8 @@ body{
 
 .paperButton{
     border: 1xp solid #323548;
-    padding: 20px 40px;
+    padding-top: clamp(12.5px,1.302vw,50px);
+    padding-left: clamp(25px,2.604vw,100px);
     background-color: #323548;
     border-radius: 3px;
     text-decoration: none;
@@ -158,45 +161,11 @@ body{
     font-family: 'Barlow Condensed', sans-serif;
 }
 
-.rockButtonText{
-    border: 1xp solid #323548;
-    padding: 20px 40px;
-    background-color: #323548;
-    border-radius: 3px;
-    text-decoration: none;
-    color: white;
-    font-size: 24px;
-    font-family: 'Barlow Condensed', sans-serif;
-    display: none;
-}
-
-.scissorsButtonText{
-    border: 1xp solid #323548;
-    padding: 20px 40px;
-    background-color: #323548;
-    border-radius: 3px;
-    text-decoration: none;
-    color: white;
-    font-size: 24px;
-    font-family: 'Barlow Condensed', sans-serif;
-    display: none;
-}
-
-.paperButtonText{
-    border: 1xp solid #323548;
-    padding: 20px 40px;
-    background-color: #323548;
-    border-radius: 3px;
-    text-decoration: none;
-    color: white;
-    font-size: 24px;
-    font-family: 'Barlow Condensed', sans-serif;
-    display: none;
-}
 
 .restart{
     border: 1xp solid #465088;
-    padding: 20px 40px;
+    padding-top: clamp(20px,2.0832vw,80px);
+    padding-left: clamp(40px,4.1664vw,160px);
     background-color: #465088;
     border-radius: 3px;
     text-decoration: none;
@@ -210,3 +179,19 @@ body{
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 30px;
 }
+
+.rockImage{
+    height: clamp(30px,3.1248vw,120px);
+    width: clamp(28px,2.91648vw,112px);
+}
+
+.scissorsImage{
+    height: clamp(30px,3.1248vw,120px);
+    width: clamp(28px,2.91648vw,112px);
+}
+
+.paperImage{
+    height: clamp(30px,3.1248vw,120px);
+    width: clamp(28px,2.91648vw,112px);
+}
+
