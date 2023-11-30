@@ -11,11 +11,11 @@
         padding: 2px 5px;
     }
     #restartButton{
-        padding: 9px 25px;
-        font-size: 15px;
+        padding: 9px 13px;
+        font-size: 12px;
     }
     #container{
-        padding: 150px 100px;
+        padding: clamp(125px,13.02vw,500px);
     }
     #userResult{
         font-size: 20px;
@@ -28,46 +28,43 @@
     }
 }
 
-@media (max-width: 320px){
+@media (max-width: 448px){
     #rockButton{
-        padding-top: clamp(0.5px,0.23364vw,2px);
-        padding-left: clamp(0.5px,0.23364vw,2px);
+        padding: clamp(2.5px,1.1682vw,10px);
     }
     #scissorsButton{
-        padding-top: clamp(0.5px,0.23364vw,2px);
-        padding-left: clamp(0.5px,0.23364vw,2px);
+        padding: clamp(2.5px,1.1682vw,10px);
     }
     #paperButton{
-        padding-top: clamp(0.5px,0.23364vw,2px);
-        padding-left: clamp(0.5px,0.23364vw,2px);
+        padding: clamp(2.5px,1.1682vw,10px);
     }
     #restartButton{
-        padding: 2px 10px;
-        font-size: 7px;
+        padding: clamp(3.5px,1.6354799999999998vw,14px);
+        font-size: clamp(3.5px,1.6354799999999998vw,14px);
     }
     #rockImg{
-        height: 10px ;
-        width: 8px;
+        height: clamp(10px,1.0416vw,40px);
+        width: clamp(8px,0.83328vw,32px);
     }
     #scissorsImg{
-        height: 10px ;
-        width: 8px;
+        height: clamp(10px,1.0416vw,40px);
+        width: clamp(8px,0.83328vw,32px);
     }
     #paperImg{
-        height: 10px ;
-        width: 8px;
+        height: clamp(10px,1.0416vw,40px);
+        width: clamp(8px,0.83328vw,32px);
     }
     #container{
-        padding: 100px 50px;
+        padding: clamp(35px,16.354799999999997vw,140px);
     }
     #userResult{
-        font-size: 10px;
+        font-size: clamp(5px,2.3364vw,20px);
     }
     #compResult{
-        font-size: 10px;
+        font-size: clamp(5px,2.3364vw,20px);
     }
     #winResult{
-        font-size: 10px;
+        font-size: clamp(5px,2.3364vw,20px);
     }
 }
     
@@ -100,14 +97,14 @@ body{
 }
 
 .start{
+    width: 100%;
     border: 1xp solid #465088;
-    padding-top: clamp(20px,2.0832vw,80px);
-    padding-left: clamp(40px,4.1664vw,160px);
+    padding: clamp(12.5px,1.302vw,50px);
     background-color: #465088;
     border-radius: 3px;
     text-decoration: none;
     color: white;
-    font-size: 24px;
+    font-size: clamp(12px,1.24992vw,48px);
     font-family: 'Barlow Condensed', sans-serif;
 }
 
@@ -120,64 +117,56 @@ body{
     flex-direction: column;
     text-align: center;
     background-color: #5E5669;
-    padding-top: clamp(250px,26.04vw,1000px);
-    padding-left: clamp(200px,20.832vw,800px);
+    padding: clamp(125px,13.02vw,500px);
     border-radius: 5px;
 }
 
 .rockButton{
     border: 1xp solid #323548;
-    padding-top: clamp(12.5px,1.302vw,50px);
-    padding-left: clamp(25px,2.604vw,100px);
+    padding: clamp(7.5px,0.7812vw,30px);
     background-color: #323548;
     border-radius: 3px;
     text-decoration: none;
     color: white;
-    font-size: 24px;
     font-family: 'Barlow Condensed', sans-serif;
 }
 
 .scissorsButton{
     border: 1xp solid #323548;
-    padding-top: clamp(12.5px,1.302vw,50px);
-    padding-left: clamp(25px,2.604vw,100px);
+    padding: clamp(7.5px,0.7812vw,30px);
     background-color: #323548;
     border-radius: 3px;
     text-decoration: none;
     color: white;
-    font-size: 24px;
     font-family: 'Barlow Condensed', sans-serif;
 }
 
 .paperButton{
     border: 1xp solid #323548;
-    padding-top: clamp(12.5px,1.302vw,50px);
-    padding-left: clamp(25px,2.604vw,100px);
+    padding: clamp(7.5px,0.7812vw,30px);
     background-color: #323548;
     border-radius: 3px;
     text-decoration: none;
     color: white;
-    font-size: 24px;
     font-family: 'Barlow Condensed', sans-serif;
 }
 
 
 .restart{
     border: 1xp solid #465088;
-    padding-top: clamp(20px,2.0832vw,80px);
-    padding-left: clamp(40px,4.1664vw,160px);
+    padding: clamp(12.5px,1.302vw,50px);
     background-color: #465088;
     border-radius: 3px;
     text-decoration: none;
     color: white;
-    font-size: 24px;
+    font-size: clamp(12px,1.24992vw,48px);
     font-family: 'Barlow Condensed', sans-serif;
 }
 
 .win{
     color: white;
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 30px;
+    font-size: clamp(15px,1.5624vw,60px);
 }
 
 .rockImage{
